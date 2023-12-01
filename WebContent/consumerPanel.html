@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Consumer Panel</title>
+<link rel="stylesheet" href="css/index.css">
+<script type="text/javascript" src="js/TextAreaValidate.js"></script>
+</head>
+<body>
+    
+    <form name="complaint-form" action="addComplaint" class="complaints" method="post" onsubmit="return validate()">
+        
+        <h2>Welcome Consumer</h2>
+        <a class="reportbuttn" href="viewreport">Complaint Status</a></br>
+        <a class="reportbuttn" href="logout">logout</a></br>
+        <textarea name="complaint" rows="10" cols="40" class="textarea-complaint" placeholder="Type your Complaint" ></textarea>
+        <input type="submit" value="Post this Complaint">
+    </form>
+</body>
+</html>

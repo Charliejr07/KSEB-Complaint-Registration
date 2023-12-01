@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>KSEB Complaints</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/Vaildation.js"></script>
+</head>
+
+<body>
+	<div class="login">
+		<h2>KSEB Complaints</h2>
+		<form name="login-form" class="login-form" action="fetch" method="post" onsubmit="return validateForm()">
+			<input type="text" name="uname" placeholder="Username">
+			<input type="password" name="upass" placeholder="Password">
+			 <select name="uselect" id="usertype">
+                <option value="admin">ADMIN</option>
+                <option value="consumer">Consumer</option>
+                <option value="lineman">Lineman</option>
+                <option value="manager">Material Manager</option>
+                <option value="engineer">Electrical Engineer</option>
+            </select>
+			<input type="submit" value="LOGIN">
+		</form>
+	</div>
+</body>
+
+</html>
